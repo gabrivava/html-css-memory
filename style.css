@@ -5,6 +5,8 @@
 }
 body {
     background: darkcyan;
+    width: 60%;
+    margin: auto;
 }
 
 .title {
@@ -14,4 +16,36 @@ body {
     margin-top: 1rem;
     font-size: 40px;
     color: white;
+    text-shadow: 3px 3px 0px #000000;
+}
+
+
+/* Main CSS */
+
+.carta {
+    height: 220px;
+    width: 180px; 
+    margin: 15px 10px;
+    /* background-size: contain; */
+    border-radius: 10px;
+    display: inline-block;
+    background-color: white;
+}
+.dorso {
+    background-image: url(./img/pattern.png);
+}
+.girata {
+    background-image: url(./img/noun_Submarine_3134738.png);
+    background-repeat: no-repeat;
+}
+.immagine_girata {
+    object-fit: contain;
+}
+
+/* Footer CSS */
+footer {
+    text-align: center;
+    font-weight: bolder;
+    font-family: 'Nunito', sans-serif;
+    text-shadow: white 1px 1px;
 }
