@@ -26,21 +26,41 @@ body {
     height: 220px;
     width: 180px; 
     margin: 15px 10px;
-    /* background-size: contain; */
     border-radius: 10px;
     display: inline-block;
     background-color: white;
+    position: relative;
 }
-.dorso {
-    background-image: url(./img/pattern.png);
+.carta_coperta {
+    border-radius: 10px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-image: url("./img/pattern.png");
+    background-size: contain;
 }
-.girata {
-    background-image: url(./img/noun_Submarine_3134738.png);
-    background-repeat: no-repeat;
+
+.carta:hover .carta_coperta{
+    display: none;
 }
-.immagine_girata {
-    object-fit: contain;
+
+.active .carta_coperta {
+    display: none;
 }
+.carta_scoperta > img{
+    width: 100%;
+}
+
+.carta_scoperta h3 {
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    font-size: 20px;
+    text-shadow: #000000 2px 2px 2px;
+    color: orange;
+}
+
 
 /* Footer CSS */
 footer {
